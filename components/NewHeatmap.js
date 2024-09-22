@@ -37,7 +37,7 @@ const HeatmapCalendar = (props) => {
 
   return (
     <View style={styles.container}>
-      <Svg height={300} width={320}>
+      <Svg height={240} width={300}>
         {daysInMonth.map((date, index) => {
           const dayString = format(date, 'yyyy-MM-dd'); // Format each date as YYYY-MM-DD
           const dayNumber = format(date, 'd'); // Get the day number
@@ -82,7 +82,7 @@ const HeatmapCalendar = (props) => {
 
 const styles = StyleSheet.create({
   container: {
-    padding: 20,
+    paddingTop: 20,
     justifyContent: 'center',
     alignItems: 'center',
   },
